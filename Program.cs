@@ -1,0 +1,13 @@
+﻿Console.WriteLine("Escreva um valor em metros:");
+string entrada = Console.ReadLine()!;
+double metro = Convert.ToDouble(entrada);
+double kilometro = metro /1000;
+double centimetro = metro * 100;
+Console.Clear();
+Console.ForegroundColor = ConsoleColor.Blue;
+Console.WriteLine($"{kilometro}Km");
+Console.ForegroundColor = ConsoleColor.Green;
+Console.WriteLine($"{metro}m");
+Console.ForegroundColor = ConsoleColor.Red;
+Console.WriteLine($"{centimetro}cm");
+Console.ResetColor();
